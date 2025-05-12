@@ -1,0 +1,31 @@
+{
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "tsc -b"
+  },
+  "engines": {
+    "node": ">=22"
+  },
+  "keywords": [],
+  "name": "@snorlaxkaran/helper-library",
+  "author": "Karan Barman",
+  "repository": {
+    "type": "git",
+    "url": ""
+  },
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com"
+  },
+  "license": "ISC",
+  "packageManager": "pnpm@10.7.0",
+  "dependencies": {
+    "express": "^5.1.0",
+    "jsonwebtoken": "9.0.2"
+  },
+  "devDependencies": {
+    "@types/express": "^5.0.1",
+    "@types/jsonwebtoken": "^9.0.9"
+  }
+}
