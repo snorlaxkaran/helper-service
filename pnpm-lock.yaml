@@ -11,6 +11,9 @@ importers:
       '@elastic/elasticsearch':
         specifier: ^9.0.1
         version: 9.0.1
+      '@snorlaxkaran/helper-library':
+        specifier: 1.0.2
+        version: 1.0.2
       cloudinary:
         specifier: ^2.6.1
         version: 2.6.1
@@ -101,6 +104,10 @@ packages:
   '@opentelemetry/semantic-conventions@1.28.0':
     resolution: {integrity: sha512-lp4qAiMTD4sNWW4DbKLBkfiMZ4jbAboJIGOQr5DvciMRI494OapieI9qiODpOt0XBr1LjIDy1xAGAnVs5supTA==}
     engines: {node: '>=14'}
+
+  '@snorlaxkaran/helper-library@1.0.2':
+    resolution: {integrity: sha512-y4TCzfU/boJsmk83PKRkHQQc3aplYroUX4O7O4HITPYw4G5bxW3dfE7uNXJ7CbvIaE4CQGriITViLjwQbRmTTA==, tarball: https://npm.pkg.github.com/download/@snorlaxkaran/helper-library/1.0.2/fbf9232fcd0265bff9316e82773a34811a04d972}
+    engines: {node: '>=22'}
 
   '@swc/helpers@0.5.17':
     resolution: {integrity: sha512-5IKx/Y13RsYd+sauPb2x+U/xZikHjolzfuDgTAl/Tdf3Q8rslRvC19NKDLgAJQ6wsqADk10ntlv08nPFw/gO/A==}
@@ -1118,6 +1125,27 @@ snapshots:
 
   '@opentelemetry/semantic-conventions@1.28.0':
     optional: true
+
+  '@snorlaxkaran/helper-library@1.0.2':
+    dependencies:
+      '@elastic/elasticsearch': 9.0.1
+      cloudinary: 2.6.1
+      express: 5.1.0
+      http-status-codes: 2.3.0
+      jsonwebtoken: 9.0.2
+      mongoose: 8.14.2
+      winston: 3.17.0
+      winston-elasticsearch: 0.19.0
+    transitivePeerDependencies:
+      - '@75lb/nature'
+      - '@aws-sdk/credential-providers'
+      - '@mongodb-js/zstd'
+      - gcp-metadata
+      - kerberos
+      - mongodb-client-encryption
+      - snappy
+      - socks
+      - supports-color
 
   '@swc/helpers@0.5.17':
     dependencies:
